@@ -1,0 +1,262 @@
+@import url('http://fonts.cdnfonts.com/css/common-pixel');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+body{
+    background-color: #d24657;
+}
+.container{
+    height: 94vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.gameboyBase{
+    width: 300px;
+    height: 500px;
+    background-color: #fa6d06;
+    border-radius: 15px 15px 50px 15px;
+    border: 6px solid black;
+    position: relative;
+    box-shadow: 25px 25px 1px #00000054;
+}
+.lineLeft{
+    background-color: #fdc362;
+    border-radius: 10px 5px 20px 10px;
+    height: 100%;
+    width: 20px;
+    position: absolute;
+}
+.lineRight{
+    background-color: #fca417;
+    height: 98.5%;
+    width: 94%;
+    position: absolute;
+    border-radius: 12px 10px 40px 0px;
+    left: 3%;
+    clip-path: polygon(0% -10000%, 100% 80%, 70% 100%, 0% 100%);
+}
+.internContent{
+    position: relative;
+}
+.twoColumnLinesTop{
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+.lineColumn{
+    margin-right: 110px;
+    width: 5px;
+    height: 25px;
+    background-color: black;
+}
+.lineColumnTwo{
+    margin-left: 110px;
+    width: 5px;
+    height: 25px;
+    background-color: black;
+}
+.lineRowTop{
+    display: block;
+}
+.lineRow{
+    width: 100%;
+    height: 5px;
+    background-color: black;
+}
+.displayCenter{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.grayAreaDisplay{
+    width: 210px;
+    height: 180px;
+    border: 5px solid black;
+    background-color: #524447;
+    border-radius: 8px 8px 25px 8px;
+}
+.twoLinesInside{
+    display: flex;
+    margin-top: 10px;
+}
+.lineRowInside{
+    margin-left: 20px;
+    width: 80px;
+    height: 4px;
+    background-color: black;
+}
+.lineRowInsideTwo{
+    margin-left: 40px;
+    width: 40px;
+    height: 4px;
+    background-color: black;
+}
+.displayInside{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    position: relative;
+    font-family: 'Common Pixel', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+.displayBlock{
+    width: 140px;
+    height: 125px;
+    background-color:#838f6f;
+    border: 4px solid black;
+    position: relative;
+    transform: translateX(0);
+    overflow: hidden;
+}
+.twoLinesCenter{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.lineCenterRow{
+    margin-right: 10px;
+    width: 80px;
+    height: 4px;
+    background-color: black;
+}
+.linesColumn{
+    display: flex;
+}
+.lineCenterColumn{
+    margin-top: -4px;
+    margin-right: 5px;
+    width: 4px;
+    height: 15px;
+    background-color: black;
+}
+.lineCenterRowTwo{
+    margin-left: 5px;
+    height: 4px;
+    width: 80px;
+    background-color: black;
+}
+.buttonsArea{
+    display: flex;
+    margin-top: 20px;
+}
+.buttonLeft{
+    background-color: #fa6d06;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: 35px;
+}
+.buttonAreaInside{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.buttonInsideRow{
+    background-color: #66494a;
+    width: 70px;
+    height: 18px;
+    position: absolute;
+    border-radius: 5px;
+    border: 3px solid black;
+}
+.buttonInsideColumn{
+    background-color: #66494a;
+    width: 18px;
+    height: 70px;
+    border-radius: 5px;
+    border: 3px solid black;
+    position: absolute;
+}
+.buttonInsideRowBorder{
+    background-color: #66494a;
+    width: 70px;
+    height: 18px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 5px;
+}
+.buttonRight{
+    background-color: #fa6d06;
+    border-radius: 50px;
+    transform: rotate(45deg);
+    width: 40px;
+    height: 100px;
+    margin-left: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buttonsInsideLeft{
+    background-color: #ff2020;
+    width: 25px;
+    height: 25px;
+    margin-top: 25px;
+    border: 4px solid black;
+    border-radius: 50%;
+}
+.buttonsInsideRight{
+    background-color: #ff2020;
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    border: 4px solid black;
+    border-radius: 50%;
+}
+.buttonsStartOff{
+    margin-top: 10px;
+    display: flex;
+    position: relative;
+}
+.buttonsStarOffInside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+}
+.start{
+    margin-right: 10px;
+    width: 6px;
+    height: 34px;
+    background-color: transparent;
+    border: 4px solid black;
+    border-radius: 50px;
+    transform: rotate(45deg);
+}
+.off{
+    margin-left: 10px;
+    width: 6px;
+    height: 34px;
+    background-color: transparent;
+    border: 4px solid black;
+    border-radius: 50px;
+    transform: rotate(45deg);
+}
+.linesRotate{
+    display: flex;
+    transform: rotate(-50deg);
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.linesRotateInsideOne{
+    width: 6px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: black;
+    margin-left: 10px;
+} 
+.credits{
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+}

@@ -1,0 +1,75 @@
+@import url('http://fonts.cdnfonts.com/css/common-pixel');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+body{
+    background-color: #d24657;
+}
+    .gameBoyBase{
+        width: 290px;
+        height: 480px;
+        box-shadow: 25px 25px 1px #00000054;
+        .lineLeft{
+            border-radius: 56px 5px 20px 56px;
+            background-color: #fdc362;
+        }
+        .lineRight{
+            background-color: #fca417;
+            height: 98.5%;
+            width: 94%;
+            position: absolute;
+            border-radius: 12px 10px 40px 0px;
+            left: 3%;
+            clip-path: polygon(0% -10000%, 100% 80%, 70% 100%, 0% 100%);
+        }
+    }
+
+.grayAreaDisplay{
+    background-color: #524447;
+    border-radius: 8px 8px 25px 8px;
+        .displayBlock{
+            background-color:#838f6f;
+        }
+}
+.displayPlay{
+    border:1px solid #515846;
+    background-color: #5f6851;
+    transition: 0.4s;
+    &:hover{
+        transition: 0.4s;
+        transform: scale(1.08);
+    }
+}
+.buttonLeft{
+    background-color: #fa6d06;
+    border-radius: 50%;
+}
+.buttonInsideRow{
+    background-color: #66494a;
+}
+.buttonRight{
+    background-color: #fa6d06;
+    border-radius: 50px;
+    transform: rotate(45deg);
+    .buttonsInsideLeft{
+        background-color: #ff2020;
+        border-radius: 50%;
+    }
+}
+.start{
+    transform: rotate(45deg);
+}
+.linesRotate{
+    display: flex;
+    transform: rotate(-50deg);
+}
+.appear{
+    background-color:#838f6f;
+    transition: 0.5s;
+    transform: scale(130);
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+}

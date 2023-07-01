@@ -66,10 +66,22 @@ body{
     transform: rotate(-50deg);
 }
 .appear{
+    position: absolute;
+    top: 40%;
+    justify-content: center;
     background-color:#838f6f;
-    transition: 0.5s;
-    transform: scale(130);
-    border-radius: 100%;
+    animation: girar 1s linear 1;
+    transform: scale(45);
     width: 10px;
     height: 10px;
+    border-radius: 1px;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg) scale(0);
+  }
+  to {
+    transform: rotate(360deg) scale(45);
+  }
 }

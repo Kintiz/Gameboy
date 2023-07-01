@@ -1,0 +1,50 @@
+@mixin color{
+    transition: 0.2s;
+    &:hover{
+        transition: 0.2s;
+        border-radius: 10px;
+        background-color:#9ea88e;
+    }
+}
+.a{
+    .a1{
+        @include color
+
+    }
+    .a2{
+        @include color
+
+    }
+    .a3{
+        @include color
+
+    }
+}
+.b{
+    .b1{
+        @include color
+
+    }
+    .b2{
+        @include color
+
+    }
+    .b3{
+        @include color
+
+    }
+}
+.c{
+    .c1{
+        @include color
+
+    }
+    .c2{
+        @include color
+
+    }
+    .c3{
+        @include color
+
+    }
+}

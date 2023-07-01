@@ -1,16 +1,24 @@
+import { useState } from 'react'
 import './App.scss'
+import Hash from './component/Hash'
 
 function App() {
 
+  const [showComponent, setShowComponent] = useState(false)
+  
   const startGame = () => {
     const  gameboy = document.querySelector('#gameboy')
     const  game = document.querySelector('#game')
-    gameboy?.classList.add("hidden")
+    setTimeout(() => {
+      setShowComponent(!showComponent)
+    }, 1000);
+    gameboy?.classList.add("block")
     game?.classList.add("appear")
+
   }
 
   return (
-    <div className="overflow-hidden flex justify-center items-center h-screen bg-red-500">
+    <div className="overflow-hidden flex justify-center items-center h-screen bg-red-500">{showComponent && <Hash/>}
       <div id='gameboy' className="gameBoyBase bg-orange-500 rounded-3xl border-4 border-black relative">
         <div className='lineLeft h-full w-5 absolute rounded'></div>
         <div className='lineRight'></div>
@@ -30,6 +38,7 @@ function App() {
               </div>
               <div className='flex flex-nowrap justify-center items-center my-4'>
                 <div onClick={startGame} className='displayBlock flex flex-col items-center justify-center w-36 h-32 border-4 border-black'>
+                  
                   Let's Play
                   <div className='displayPlay my-2 w-14 text-center cursor-pointer hover:scale-2'>
                     Play
